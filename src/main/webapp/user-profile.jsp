@@ -168,7 +168,7 @@
 		else{
 		%>
 	<div class="alert alert-danger">
-		<strong><center>Tài khoản đã được đăng xuất! </strong>Bạn vui lòng đăng nhập để dùng tính năng này.</center> 
+		<center><strong>Tài khoản đã được đăng xuất! </strong>Bạn vui lòng đăng nhập để dùng tính năng này.</center> 
 	</div>
 	<%} %>
 	<br>

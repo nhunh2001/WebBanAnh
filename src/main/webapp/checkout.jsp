@@ -40,9 +40,10 @@
 </head>
 
 <body onload="onload()"> 
+
 	<%
-		CartDAO cart = (CartDAO) session.getAttribute("cart");
-		if(cart.countItems() > 0 && cart != null){
+	CartDAO cart = (CartDAO) session.getAttribute("cart");
+	if(cart != null && cart.countItems() > 0){
 	%>
 	<!-- Thêm phần tiêu đề trang -->
 	<jsp:include page="layout/header.jsp"></jsp:include>
@@ -95,7 +96,7 @@
 							<div class="col-md-12">
 								<div class="billing-input">
 									<label> Tỉnh - Thành phố <span class="required">*</span>
-									</label> <select onchange="loadDistrict(this.value);" id="city"required" name="city">
+									</label> <select onchange="loadDistrict(this.value);" id="city" required name="city">
 										<%
 											//ArrayList<Tinh_ThanhPho> tinh_thanhpho = (ArrayList<Tinh_ThanhPho>)request.getAttribute("tinh_thanhpho");
 											AddressBO tinh_thanhpho = new AddressBO();
@@ -264,7 +265,7 @@
 													Hiện chúng tôi cung cấp hình thức thanh toán trực tiếp bằng
 													cách: <br> Các bạn chuyển tiền vào tài khoản bên dưới
 													sau khi được nhân viên xác nhận đơn hàng <br> Số tài
-													khoản: ^^ <br> Chủ tài khoản: Phan Quốc Hùng
+													khoản: 0491000179341 <br> Chủ tài khoản: AU QUANG VU
 												</p>
 											</div>
 										</div>

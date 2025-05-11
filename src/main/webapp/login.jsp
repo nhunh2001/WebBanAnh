@@ -22,7 +22,7 @@
 				class="input-group">
 				<input type="text" class="input-field" name="user-name"
 					placeholder="Tên đăng nhập hoặc email" required> <input
-					type="text" class="input-field" name="user-password"
+					type="password" class="input-field" name="user-password"
 					placeholder="Nhập mật khẩu" required>
 				<%
 									if (session.getAttribute("errorlogin") != null) {
